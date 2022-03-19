@@ -25,7 +25,7 @@ contract Domains is ERC721URIStorage {
     mapping(string => string) public records;
     mapping(string => string) public emails;
 
-    constructor(string memory _tld) payable ERC721("Banana Name Service", "BNS"){
+    constructor(string memory _tld) payable ERC721("gr8 Name Service", "BNS"){
         tld = _tld;
         console.log("%s is the NSD.", _tld);
     }
@@ -68,7 +68,7 @@ contract Domains is ERC721URIStorage {
                 string(
                     abi.encodePacked(
                         '{"name": "', _name,
-                        '", "description": "A domain on the Banana name service", "image": "data:image/svg+xml;base64,',
+                        '", "description": "A domain on the gr8 name service", "image": "data:image/svg+xml;base64,',
                         Base64.encode(bytes(finalSvg)),
                         '","length":"', strLen,
                         '"}'
